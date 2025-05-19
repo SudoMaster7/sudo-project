@@ -28,6 +28,7 @@
 
     .gradient-title {
       background: linear-gradient(90deg, var(--purple), var(--blue));
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -40,9 +41,29 @@
 <body class="min-h-screen px-6 py-10">
   <!-- Cabeçalho -->
   <header class="mb-16 text-center">
-    <h1 class="text-4xl font-bold gradient-title mb-2">SUDO Projetos</h1>
-    <p class="text-gray-400">Aplicações, sistemas e ideias que desenvolvi com paixão.</p>
+    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight gradient-title mb-4 drop-shadow-md">
+      <span class="block">SUDO</span>
+      <span class="block text-gray-200 text-xl font-medium tracking-wide">Projetos Digitais com Personalidade</span>
+    </h1>
+    
+    <p class="text-gray-400">Aplicações, sistemas e ideias que desenvolvidas com paixão.</p>
   </header>
+
+  <!-- Seção de Destaque Explicativa -->
+<section class="bg-gradient-to-r from-purple-700 via-blue-700 to-purple-900 text-white rounded-xl p-10 mb-16 shadow-lg max-w-5xl mx-auto text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">Por que ter um site próprio é essencial hoje?</h2>
+  <p class="text-lg md:text-xl text-gray-200 leading-relaxed">
+    Em um mundo cada vez mais digital, <strong>ter um site personalizável é mais do que um luxo — é uma necessidade</strong>. Seja para apresentar seus projetos, serviços ou ideias, seu site é o seu cartão de visitas online, funcionando 24 horas por dia, 7 dias por semana. 
+    <br><br>
+    Ao ter um espaço único, com a sua identidade visual, você <strong>transmite profissionalismo, conquista mais confiança</strong> e se destaca frente à concorrência. Mais do que isso: você tem total controle sobre o que quer comunicar ao mundo.
+    <br><br>
+    Pare de depender apenas de redes sociais. Construa sua presença digital de forma sólida e personalizada.
+  </p>
+  <p class="mt-6 text-lg text-white font-semibold">
+    Confira abaixo alguns projetos de exemplo para se inspirar e visualizar o que posso criar para você:
+  </p>
+</section>
+
 
   <!-- Projetos -->
   <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
@@ -101,6 +122,20 @@
     <!-- Adicione mais projetos copiando o bloco acima -->
     
   </main>
+
+  <!-- Seção de Contato -->
+<section class="bg-gray-800 text-white rounded-xl p-10 mt-20 max-w-4xl mx-auto text-center shadow-lg">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 text-purple-400">Gostou do que viu?</h2>
+  <p class="text-lg text-gray-300 mb-6">
+    Entre em contato agora mesmo e vamos conversar sobre como posso ajudar a transformar sua ideia em um site incrível e único. Estou pronto para criar algo que realmente represente você!
+  </p>
+  <a href="https://api.whatsapp.com/send?phone=+5521983388872&text=Ol%C3%A1%2C%20vi%20seus%20projetos%20e%20tenho%20interesse%20em%20criar%20um%20site%20personalizado.%20Podemos%20conversar%3F"
+     target="_blank"
+     class="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full text-lg transition shadow-lg inline-block">
+    💬 Fale comigo pelo WhatsApp
+  </a>
+</section>
+
 
   <!-- Rodapé -->
   <footer class="mt-16 text-center text-gray-500 text-sm">
