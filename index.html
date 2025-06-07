@@ -3,28 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Seus Projetos</title>
+  <title>SUDO | Sites Profissionais para Impulsionar seu Negócio</title>
+  <link rel="icon" type="image/png" href="https://ik.imagekit.io/1uvl3qjn3/Image_fx__10_-removebg-preview.png?updatedAt=1749335599784">
+  <link rel="apple-touch-icon" href="https://ik.imagekit.io/1uvl3qjn3/Image_fx__10_-removebg-preview.png?updatedAt=1749335599784">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   
   <style>
     :root {
-      --bg-dark: #0f0f1a;
-      --purple: #6c63ff;
-      --blue: #3f3dff;
-      --text-light: #d1d5db;
+      --bg-dark: #11111b; /* Um preto um pouco mais azulado e moderno */
+      --purple: #7c6dff; /* Tom de roxo mais vibrante */
+      --blue: #3f6dff;
+      --text-light: #e2e8f0; /* Um cinza mais claro para melhor contraste */
+      --green-cta: #10b981; /* Verde para CTAs de alta visibilidade */
     }
 
+    /* NOVO: Aplicando a nova fonte e cores */
     body {
       background-color: var(--bg-dark);
       color: var(--text-light);
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Sora', sans-serif;
     }
 
     .project-card:hover {
-      transform: translateY(-4px);
-      transition: all 0.3s ease;
-      box-shadow: 0 8px 20px rgba(108, 99, 255, 0.15);
+      transform: translateY(-5px);
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 10px 25px rgba(124, 109, 255, 0.1);
+      border-color: var(--purple);
     }
 
     .gradient-title {
@@ -36,119 +46,156 @@
 
     .social-link:hover {
       color: var(--purple);
+      transform: scale(1.1);
+      transition: all 0.2s ease;
+    }
+
+    /* NOVO: Estilo para o botão flutuante do WhatsApp */
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        z-index: 100;
+        transition: transform 0.3s ease;
+    }
+    .whatsapp-float:hover {
+        transform: scale(1.1);
     }
   </style>
 </head>
-<body class="min-h-screen px-6 py-10">
-  <!-- Cabeçalho -->
-  <header class="mb-16 text-center">
+<body class="min-h-screen px-6 py-10 antialiased">
+    
+  <a href="https://api.whatsapp.com/send?phone=+5521983388872&text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20tenho%20interesse%20em%20um%20site%20personalizado." class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp" style="margin-top: 15px;"></i>
+  </a>
+
+  <header class="mb-20 text-center">
     <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight gradient-title mb-4 drop-shadow-md">
       <span class="block">SUDO</span>
-      <span class="block text-gray-200 text-xl font-medium tracking-wide">Projetos Digitais com Personalidade</span>
+      <span class="block text-gray-200 text-2xl font-medium tracking-wide mt-2">Transformamos sua Visão em Realidade Digital</span>
     </h1>
-    
-    <p class="text-gray-400">Aplicações, sistemas e ideias que desenvolvidas com paixão.</p>
+    <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+      Criamos sites personalizados que geram autoridade, atraem clientes e impulsionam seu negócio.
+    </p>
   </header>
 
-  <!-- Seção de Destaque Explicativa -->
-<section class="bg-gradient-to-r from-purple-700 via-blue-700 to-purple-900 text-white rounded-xl p-10 mb-16 shadow-lg max-w-5xl mx-auto text-center">
-  <h2 class="text-3xl md:text-4xl font-bold mb-4">Por que ter um site próprio é essencial hoje?</h2>
-  <p class="text-lg md:text-xl text-gray-200 leading-relaxed">
-    Em um mundo cada vez mais digital, <strong>ter um site personalizável é mais do que um luxo — é uma necessidade</strong>. Seja para apresentar seus projetos, serviços ou ideias, seu site é o seu cartão de visitas online, funcionando 24 horas por dia, 7 dias por semana. 
-    <br><br>
-    Ao ter um espaço único, com a sua identidade visual, você <strong>transmite profissionalismo, conquista mais confiança</strong> e se destaca frente à concorrência. Mais do que isso: você tem total controle sobre o que quer comunicar ao mundo.
-    <br><br>
-    Pare de depender apenas de redes sociais. Construa sua presença digital de forma sólida e personalizada.
-  </p>
-  <p class="mt-6 text-lg text-white font-semibold">
-    Confira abaixo alguns projetos de exemplo para se inspirar e visualizar o que posso criar para você:
-  </p>
-</section>
+  <section class="bg-gray-900 border border-gray-800 rounded-xl p-8 md:p-12 mb-20 shadow-xl max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-title">Sua Marca Merece um Espaço Único</h2>
+    <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+      Em um mercado competitivo, depender apenas de redes sociais é arriscado. Um site profissional é seu maior ativo digital: ele trabalha para você 24/7, construindo <strong>credibilidade</strong> e convertendo visitantes em <strong>clientes</strong>.
+    </p>
+    <p class="mt-6 text-lg text-white font-semibold">
+      Veja abaixo modelos de sucesso que podemos adaptar para o seu negócio:
+    </p>
+  </section>
 
-
-  <!-- Projetos -->
   <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
     
-    <!-- Projeto 1 -->
-    <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow project-card">
-      <img src="organizall.jpg" alt="Projeto 1" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h2 class="text-xl font-semibold mb-2 text-purple-400">Sistema de Gestão Financeira</h2>
-        <p class="text-sm text-gray-400 mb-4">Gerencie despesas, receitas e relatórios com um painel intuitivo.</p>
-        <div class="flex justify-between space-x-2">
-          <a href="https://organizall-1-0.vercel.app/" class="bg-purple-600 hover:bg-purple-700 text-white text-sm px-4 py-2 rounded transition">Ver Site</a>
-          <a href="#" class="border border-purple-500 text-purple-400 hover:bg-purple-700 hover:text-white text-sm px-4 py-2 rounded transition">Mais Detalhes</a>
+    <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow-lg project-card flex flex-col">
+      <img src="https://ik.imagekit.io/1uvl3qjn3/Image_fx%20(65).jpg?updatedAt=1749334875924" alt="Protótipo de Sistema de Gestão Financeira" class="w-full h-48 object-cover">
+      <div class="p-6 flex-grow flex flex-col">
+        <h2 class="text-xl font-bold mb-2 text-purple-400">Sistema de Gestão Financeira</h2>
+        <p class="text-sm text-gray-400 mb-4 flex-grow">Uma plataforma completa para organizar finanças, ideal para empresas e autônomos que buscam controle e clareza.</p>
+        <div class="flex flex-wrap gap-2 mt-auto">
+          <a href="https://organizall-1-0.vercel.app/" target="_blank" class="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white text-sm px-4 py-2 rounded transition">Ver Protótipo</a>
+          <a href="https://api.whatsapp.com/send?phone=+5521983388872&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20modelo%20de%20Sistema%20de%20Gest%C3%A3o." target="_blank" class="flex-1 text-center border border-green-500 text-green-400 hover:bg-green-500 hover:text-white text-sm px-4 py-2 rounded transition">Pedir Orçamento</a>
         </div>
       </div>
     </div>
 
-    <!-- Projeto 2 -->
-    <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow project-card">
-      <img src="bfjsystem.jpg" alt="Projeto 2" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h2 class="text-xl font-semibold mb-2 text-blue-400">BFJ - Transformando problemas reais em soluções digitais</h2>
-        <p class="text-sm text-gray-400 mb-4">Site de divulgação de trabalhos bfj portifolio. </p>
-        <div class="flex justify-between space-x-2">
-          <a href="https://bfj-portifolio.vercel.app/" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded transition">Ver Site</a>
-          <a href="#" class="border border-blue-500 text-blue-400 hover:bg-blue-700 hover:text-white text-sm px-4 py-2 rounded transition">Mais Detalhes</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projeto 3 -->
-    <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow project-card">
-      <img src="street.jpg" alt="Projeto 3" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h2 class="text-xl font-semibold mb-2 text-purple-400">Portifolio Artistico</h2>
-        <p class="text-sm text-gray-400 mb-4">Site para mostrar dados de musicas, shows e roupas para conectar-se com seu fã</p>
-        <div class="flex justify-between space-x-2">
-          <a href="https://music-portifolio.vercel.app/" class="bg-purple-600 hover:bg-purple-700 text-white text-sm px-4 py-2 rounded transition">Ver Site</a>
-          <a href="#" class="border border-purple-500 text-purple-400 hover:bg-purple-700 hover:text-white text-sm px-4 py-2 rounded transition">Mais Detalhes</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow project-card">
-        <img src="advocacia.jpg" alt="Projeto 3" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h2 class="text-xl font-semibold mb-2 text-blue-400">Portifolio Advocacia</h2>
-          <p class="text-sm text-gray-400 mb-4">Site para mostrar seus trabalhos e avaliações de cliente para contratar serviço de advocacia</p>
-          <div class="flex justify-between space-x-2">
-            <a href="https://advocacia-portifolio.vercel.app/" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded transition">Ver Site</a>
-            <a href="#" class="border border-blue-500 text-blue-400 hover:bg-blue-700 hover:text-white text-sm px-4 py-2 rounded transition">Mais Detalhes</a>
+    <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow-lg project-card flex flex-col">
+        <img src="https://ik.imagekit.io/1uvl3qjn3/Image_fx.jpg?updatedAt=1749334874835" alt="Protótipo de Site para Agência Digital" class="w-full h-48 object-cover">
+        <div class="p-6 flex-grow flex flex-col">
+          <h2 class="text-xl font-bold mb-2 text-purple-400">Portfólio para Agências</h2>
+          <p class="text-sm text-gray-400 mb-4 flex-grow">Um site de impacto para agências e freelancers mostrarem seus projetos de forma profissional e atraente.</p>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <a href="https://bfj-portifolio.vercel.app/" target="_blank" class="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white text-sm px-4 py-2 rounded transition">Ver Protótipo</a>
+            <a href="https://api.whatsapp.com/send?phone=+5521983388872&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20modelo%20de%20Portf%C3%B3lio%20para%20Ag%C3%AAncias." target="_blank" class="flex-1 text-center border border-green-500 text-green-400 hover:bg-green-500 hover:text-white text-sm px-4 py-2 rounded transition">Pedir Orçamento</a>
           </div>
         </div>
-      </div>
-    <!-- Adicione mais projetos copiando o bloco acima -->
+    </div>
+
+    <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow-lg project-card flex flex-col">
+        <img src="https://ik.imagekit.io/1uvl3qjn3/Image_fx%20(1).jpg?updatedAt=1749334874829" alt="Protótipo de Portfólio Artístico" class="w-full h-48 object-cover">
+        <div class="p-6 flex-grow flex flex-col">
+            <h2 class="text-xl font-bold mb-2 text-purple-400">Portfólio Artístico</h2>
+            <p class="text-sm text-gray-400 mb-4 flex-grow">Conecte-se com seus fãs. Um espaço para centralizar músicas, agenda de shows, biografia e loja de produtos.</p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <a href="https://music-portifolio.vercel.app/" target="_blank" class="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white text-sm px-4 py-2 rounded transition">Ver Protótipo</a>
+              <a href="https://api.whatsapp.com/send?phone=+5521983388872&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20modelo%20de%20Portf%C3%B3lio%20Art%C3%ADstico." target="_blank" class="flex-1 text-center border border-green-500 text-green-400 hover:bg-green-500 hover:text-white text-sm px-4 py-2 rounded transition">Pedir Orçamento</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow-lg project-card flex flex-col">
+        <img src="https://ik.imagekit.io/1uvl3qjn3/Image_fx%20(2).jpg?updatedAt=1749334874726" alt="Protótipo de Site de Advocacia" class="w-full h-48 object-cover">
+        <div class="p-6 flex-grow flex flex-col">
+            <h2 class="text-xl font-bold mb-2 text-purple-400">Site para Advocacia</h2>
+            <p class="text-sm text-gray-400 mb-4 flex-grow">Um portal que transmite a seriedade e a confiança essenciais para um escritório de advocacia, com áreas de atuação e contato facilitado.</p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <a href="https://advocacia-portifolio.vercel.app/" target="_blank" class="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white text-sm px-4 py-2 rounded transition">Ver Protótipo</a>
+              <a href="https://api.whatsapp.com/send?phone=+5521983388872&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20modelo%20de%20Site%20para%20Advocacia." target="_blank" class="flex-1 text-center border border-green-500 text-green-400 hover:bg-green-500 hover:text-white text-sm px-4 py-2 rounded transition">Pedir Orçamento</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow-lg project-card flex flex-col">
+        <img src="https://ik.imagekit.io/1uvl3qjn3/Image_fx%20(3).jpg?updatedAt=1749334874730" alt="Protótipo de Loja de Óculos" class="w-full h-48 object-cover">
+        <div class="p-6 flex-grow flex flex-col">
+            <h2 class="text-xl font-bold mb-2 text-purple-400">E-commerce (Ótica)</h2>
+            <p class="text-sm text-gray-400 mb-4 flex-grow">Uma loja virtual elegante para exibir seus produtos, com integração para pagamento e avaliações de clientes.</p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <a href="https://oculos-self.vercel.app" target="_blank" class="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white text-sm px-4 py-2 rounded transition">Ver Protótipo</a>
+              <a href="https://api.whatsapp.com/send?phone=+5521983388872&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20modelo%20de%20E-commerce%20para%20%C3%93tica." target="_blank" class="flex-1 text-center border border-green-500 text-green-400 hover:bg-green-500 hover:text-white text-sm px-4 py-2 rounded transition">Pedir Orçamento</a>
+            </div>
+        </div>
+    </div>
     
-  </main>
+    <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow-lg project-card flex flex-col">
+        <img src="https://ik.imagekit.io/1uvl3qjn3/Image_fx%20(4).jpg?updatedAt=1749334874726" alt="Protótipo de Site para Serviços de Manutenção" class="w-full h-48 object-cover">
+        <div class="p-6 flex-grow flex flex-col">
+            <h2 class="text-xl font-bold mb-2 text-purple-400">Página de Serviços</h2>
+            <p class="text-sm text-gray-400 mb-4 flex-grow">Ideal para prestadores de serviço (manutenção, reformas, etc.). Mostre seus trabalhos e facilite a solicitação de orçamentos.</p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <a href="https://manutencao-ashen.vercel.app/" target="_blank" class="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white text-sm px-4 py-2 rounded transition">Ver Protótipo</a>
+              <a href="https://api.whatsapp.com/send?phone=+5521983388872&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20modelo%20de%20P%C3%A1gina%20de%20Servi%C3%A7os." target="_blank" class="flex-1 text-center border border-green-500 text-green-400 hover:bg-green-500 hover:text-white text-sm px-4 py-2 rounded transition">Pedir Orçamento</a>
+            </div>
+        </div>
+    </div>
 
-  <!-- Seção de Contato -->
-<section class="bg-gray-800 text-white rounded-xl p-10 mt-20 max-w-4xl mx-auto text-center shadow-lg">
-  <h2 class="text-3xl md:text-4xl font-bold mb-4 text-purple-400">Gostou do que viu?</h2>
-  <p class="text-lg text-gray-300 mb-6">
-    Entre em contato agora mesmo e vamos conversar sobre como posso ajudar a transformar sua ideia em um site incrível e único. Estou pronto para criar algo que realmente represente você!
-  </p>
-  <a href="https://api.whatsapp.com/send?phone=+5521983388872&text=Ol%C3%A1%2C%20vi%20seus%20projetos%20e%20tenho%20interesse%20em%20criar%20um%20site%20personalizado.%20Podemos%20conversar%3F"
-     target="_blank"
-     class="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full text-lg transition shadow-lg inline-block">
-    💬 Fale comigo pelo WhatsApp
-  </a>
-</section>
+     </main>
+
+  <section class="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl p-10 mt-20 max-w-4xl mx-auto text-center shadow-2xl">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Pronto para Elevar sua Presença Online?</h2>
+    <p class="text-lg text-gray-200 mb-8">
+      Sua ideia merece um site incrível. Fale comigo e vamos, juntos, criar uma solução digital que traga resultados reais para o seu negócio.
+    </p>
+    <a href="https://api.whatsapp.com/send?phone=+5521983388872&text=Ol%C3%A1%2C%20vi%20seus%20projetos%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
+       target="_blank"
+       class="bg-white hover:bg-gray-200 text-purple-600 font-bold px-8 py-4 rounded-full text-lg transition shadow-lg transform hover:scale-105 inline-block">
+      <i class="fab fa-whatsapp"></i> Fazer um Orçamento Agora
+    </a>
+  </section>
 
 
-  <!-- Rodapé -->
-  <footer class="mt-16 text-center text-gray-500 text-sm">
+  <footer class="mt-20 text-center text-gray-500 text-sm">
     <p class="mb-4">&copy; 2025 SUDO. Todos os direitos reservados.</p>
-    <div class="flex justify-center space-x-6 text-xl">
+    <div class="flex justify-center space-x-6 text-2xl">
       <a href="https://github.com/SudoMaster7" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/leonardo-brito-133645262/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
       <a href="https://instagram.com/sudo_brito" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
       <a href="mailto:moraesleonardobrito@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-      <a href="https://pagepepe.vercel.app/" class="text-xs">Secret</a>
     </div>
   </footer>
+  
   <script src="https://cdn.counter.dev/script.js" data-id="dae9ffdb-97f1-45f1-9cad-5c53706bd12c" data-utcoffset="-3"></script>
 </body>
 </html>
