@@ -230,7 +230,40 @@
         </div>
       </div>
     </div>
-
+    <section id="orcamento-personalizado" class="max-w-4xl mx-auto mt-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-title">Tem uma Ideia Única?</h2>
+      <p class="text-lg text-gray-300 mb-10">
+        Preencha o formulário abaixo com os detalhes do seu projeto e receba um orçamento personalizado diretamente no seu WhatsApp.
+      </p>
+  
+      <form id="custom-site-form" class="text-left space-y-6 bg-gray-900 border border-gray-800 p-8 rounded-xl shadow-xl">
+        <div>
+          <label for="nome" class="block text-sm font-semibold text-gray-300 mb-2">Seu Nome</label>
+          <input type="text" id="nome" name="nome" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition">
+        </div>
+  
+        <div>
+          <label for="tipo_negocio" class="block text-sm font-semibold text-gray-300 mb-2">Qual o tipo do seu negócio ou projeto? (Ex: Loja de Roupas, Portfólio de Fotografia)</label>
+          <input type="text" id="tipo_negocio" name="tipo_negocio" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition">
+        </div>
+  
+        <div>
+          <label for="ideia" class="block text-sm font-semibold text-gray-300 mb-2">Descreva sua ideia. Que funcionalidades você precisa?</label>
+          <textarea id="ideia" name="ideia" rows="4" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition" placeholder="Ex: Sistema de login, galeria de fotos, integração com pagamentos, blog..."></textarea>
+        </div>
+        
+        <div>
+          <label for="referencia" class="block text-sm font-semibold text-gray-300 mb-2">Tem algum site que você gosta como referência? (Opcional)</label>
+          <input type="url" id="referencia" name="referencia" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition" placeholder="https://www.exemplo.com">
+        </div>
+  
+        <div>
+          <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition shadow-lg transform hover:scale-105">
+            Enviar Ideia para Orçamento
+          </button>
+        </div>
+      </form>
+    </section>
      </main>
 
   <section class="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl p-10 mt-20 max-w-4xl mx-auto text-center shadow-2xl">
@@ -257,5 +290,39 @@
   </footer>
   
   <script src="https://cdn.counter.dev/script.js" data-id="dae9ffdb-97f1-45f1-9cad-5c53706bd12c" data-utcoffset="-3"></script>
+  <script>
+    document.getElementById('custom-site-form').addEventListener('submit', function(event) {
+      // 1. Impede o envio padrão do formulário
+      event.preventDefault();
+  
+      // 2. Coleta os dados dos campos do formulário
+      const nome = document.getElementById('nome').value;
+      const tipoNegocio = document.getElementById('tipo_negocio').value;
+      const ideia = document.getElementById('ideia').value;
+      const referencia = document.getElementById('referencia').value;
+  
+      // 3. Define seu número de WhatsApp (formato internacional)
+      const meuNumero = '+5521983388872';
+  
+      // 4. Monta a mensagem predefinida
+      let mensagem = `Olá! Tenho interesse em um orçamento para um site personalizado.\n\n` +
+                     `*Nome:* ${nome}\n` +
+                     `*Tipo de Negócio/Projeto:* ${tipoNegocio}\n\n` +
+                     `*Minhas Ideias e Funcionalidades:*\n${ideia}\n\n`;
+      
+      if (referencia) {
+        mensagem += `*Site de Referência:* ${referencia}`;
+      }
+  
+      // 5. Codifica a mensagem para ser usada em uma URL
+      const mensagemCodificada = encodeURIComponent(mensagem);
+  
+      // 6. Cria o link final do WhatsApp
+      const whatsappURL = `https://api.whatsapp.com/send?phone=${meuNumero}&text=${mensagemCodificada}`;
+  
+      // 7. Abre o WhatsApp em uma nova aba
+      window.open(whatsappURL, '_blank');
+    });
+  </script>
 </body>
 </html>
